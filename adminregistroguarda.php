@@ -16,6 +16,7 @@ $salida=mysqli_query($conexion,$sql);
 //validar accion de insercion
   if(mysqli_affected_rows($conexion)>0){
 	  echo "Datos Insertados";
+	  header("location:adminpagina.php");
   }else{
 	  echo "No se logro insertar datos";
   }
