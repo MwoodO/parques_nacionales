@@ -84,11 +84,11 @@ echo '<form name="f1" action="visitanteactualizaagenda.php" method="POST">
 </form>';
 }
 if(isset($_POST['modifica'])){
-	$a=$fila['codigo'];
-	$b=$fila['correo'];
-	$c=$fila['parque'];
-	$d=$fila['fecha']; 
-	$e=$fila['acompanantes'];
+	$a = $_POST['codigo'];
+	$b = $_POST['correo'];
+	$c = $_POST['parque'];
+	$d = $_POST['fecha']; 
+	$e = $_POST['acompanantes'];
 	$sql="UPDATE agendavisita SET  correo= '".$b."',parque='".$c."', fecha='".$d."', acompanantes='".$e."' where codigo='".$a."' ";
 	$salida=mysqli_query($conexion,$sql);
 	if(mysqli_affected_rows($conexion)>0){
