@@ -12,10 +12,11 @@
 <tr>
 	<td width="200"> <p class="barra" >actualizar o modificar turnos de los guardaparques</p> </a></td>
 <tr>
-	<td width="200"> <p class="barra" >eliminar turnos de los guardaparques</p> </a></td>
+	<td width="200"> <a href="http://localhost/parquesnacionales/admineliminaturno.php" TARGET="_self"><p class="barra" >eliminar turnos de los guardaparques</p> </a></td>
 <tr>
 	<td width="200"><a href="http://localhost/parquesnacionales/verturnosguardia.php" TARGET="_self"> <p class="barra" > Ver los turnos de los guardaparques </p> </a></td>
 </table>
 </div>
 </body>
 </html>
+
