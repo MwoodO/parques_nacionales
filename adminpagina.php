@@ -9,10 +9,10 @@
 <table class="tabla" width="400"> 
 <tr>
 	<td width="200"><a href="http://localhost/parquesnacionales/gestionturnos.php" TARGET="_self"> <p class="barra" > gestionar turnos de los guardaparques </p> </a></td>
-<tr>
-	<td width="200"> <p class="barra" >Obtener indice de visitantes a los parques</p> </a></td>
+</tr>	
 <tr>
 	<td width="200"><a href="http://localhost/parquesnacionales/adminregistraguarda.php" TARGET="_self"><p class="barra" > ingrese nuevos guardaparques </p> </a></td>
+</tr>
 </table>
 </div>
 </body>
