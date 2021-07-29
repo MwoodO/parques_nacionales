@@ -1,32 +1,39 @@
 <!DOCTYPEhtml>
 <html>
 <head>
-	<title> Agenda tu visita	</title>
+    <meta charset="UTF-8">
+	<title>Inicio sesion visitantes</title>
+	<link rel="stylesheet" href="estilo/estiloaccesousuario.css">
 </head>
-<body>
-<form  action="validacionvisita.php" method="POST">
-<table class="tabla1" width="55%" align="center" cellpadding="0" cellspacing="0">
-			<tr>
-				<td>Correo </td>
-				<td> <label> <input type="text"  placeholder="Ingrese su correo" name="correo" size="25" > </label> </td>
-			</tr>
-			<tr>
-				<td> contraseña</td>
-				<td> <label> <input type="password"  placeholder="*********" name="contrasena" size="25" > </label> </td>
-			</tr>
-			<tr>
-			<td class="boton"
-			<center>
-			<label>
-			 <input type="submit" name="registro" value="iniciar sesion">
-			 </center>
-			 </label>
-			 </td>
-			 </tr>	  
+
+    <body class="back">
+	  <div class="topnav">
+   <ul>
+     <a href="http://localhost/parquesnacionales/visitantespaginicio.php"> Atras</a>
+     </ul>
+	 </div>
+    <form  action="validacionvisita.php" method="POST" class="form">
+        <table class="center" border="0" width="60%" align="center">
+        <tr>
+            <td class="centro" >Inicio de Sesion</td>
+        </tr>
+        <tr>
+					<td>
+						<table border="0" width="100%">
+							<tr>
+				
+			                	<td><input type="text" required placeholder="correo" name="correo" size="10" ></td>
+			                </tr>
+			                <tr>
+				                <td><input type="password" required placeholder="contraseña" name="contrasena" size="10" ></td>
+			                    </tr>			
+                        </table>
+                    </td>
+               </tr>
+                <tr>         
+			    <td class="centro"><input class="boton" type="submit" name="registro" value="acceder"></td>
+			 </tr>
 </table>
-<center>
-<p> Si no te has registrado, puedes hacerlo <a href="http://localhost/parquesnacionales/visitantesregistro.php" TARGET="_self">aqui </p></a>
-</center>
 </form>
 </body>
 </html>
