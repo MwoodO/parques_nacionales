@@ -20,7 +20,7 @@ $seleccion=$seleccion.'</select>';
 	 <a href="http://localhost/parquesnacionales/visitantepagina.php">ATRAS</a>
      </ul>
 </div>
-<form name="f1" action="visitanteactualizaagenda.php" method="post">
+<form class="from"name="f1" action="visitanteactualizaagenda.php" method="post">
 <?php echo $seleccion; ?>
 <input type="submit" name="buscar" value="Buscar">
 </form>
@@ -113,7 +113,7 @@ if($filas == 1){
 	$sql=" UPDATE agendavisita SET  correo= '".$b."',parque='".$c."', fecha='".$d."', acompanantes='".$e."' where codigo='".$a."' ";
 	$salida=mysqli_query($conexion,$sql);
 	if(mysqli_affected_rows($conexion)>0){
-		echo "Datos Insertados";
+		echo "Datos modificados";
 		}else{
 			echo "No se logro insertar datos";
 		}
