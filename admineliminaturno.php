@@ -1,8 +1,20 @@
 <html>
 <head>
-<title> Administrador</title>
+<meta charset="UTF-8">
+       <title> Administrador</title>
+       <link rel="stylesheet" href="estilo/estilotablas.css">
 </head>
 <body>
+<div>
+ <h1> <center>Bienvenido</center></h1>
+ <div class="topnav">
+   <ul>
+     <a href="inicio%20paginas.html"> Cerrar sesion </a>
+	 <a href="http://localhost/parquesnacionales/adminpagina.php"> pagina de inicio  </a>
+	 <a href="http://localhost/parquesnacionales/admingestionturnos.php"> pagina anterior </a>
+
+     </ul>
+</div>
 <?php
 $conexion=mysqli_connect("localhost","root","","parquesnacionales");
 $sql="SELECT * FROM turnoguarda";
@@ -30,8 +42,7 @@ while($fila=mysqli_fetch_assoc($salida)){
 	$x++;
 }
 echo'
-</table> <a href="http://localhost/parquesnacionales/gestionturnos.php" TARGET="_self"> <p class="barra" > pagina anterior </p> </a>
-<a href="http://localhost/parquesnacionales/adminpagina.php" TARGET="_self"> <p class="barra" > pagina de inicio  </p> </a>
+</table>
 </body>
 </html>';
 if(isset($_POST['eliminar'])){
