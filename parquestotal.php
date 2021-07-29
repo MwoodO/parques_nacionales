@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
  	<title> parque nacionales </title>
- 	<link rel="stylesheet" href="estilos.css">	
+ 	<link rel="stylesheet" href="estilo/estilotablas.css">
 </head>
 <body>
 <?php
@@ -10,7 +12,13 @@ $sql = "SELECT  `nparque`,`aforomax`,`comuna`,`region`,`accesos` FROM `parquess`
 $salida = mysqli_query($conexion,$sql);
 ?>
  <div>
- <h1> <center>Estos son algunos de nuestros parques</center></h1>
+  <h1> <center>Estos son algunos de nuestros parques</center></h1>
+ <div class="topnav">
+   <ul>
+     <a href="inicio%20paginas.html">Inicio</a>
+     </ul>
+</div>
+
 <table class="tabla1" width="55%" align="center" cellpadding="0" cellspacing="0">
 <tr>
 	<td> Nombre del parque </td>
