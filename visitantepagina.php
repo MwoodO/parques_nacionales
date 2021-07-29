@@ -1,17 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title> Visitante </title>
+    <meta charset="UTF-8">
+    <title>Parques Naciones</title>
+    <link rel="stylesheet" href="estilo/estilopag_in.css">
 </head>
 <body>
-<div>
-<h1> <center>Bienvenido</center></h1>
-<p>  <center>¿Que desea hacer?</center> </p>
-<table class="tabla" width="400"> 
-<tr>
-	<td width="200"><a href="http://localhost/parquesnacionales/visitanteresgistroagenda.php" TARGET="_self"> <p class="barra" > registre su visita </p> </a></td>
-<tr>
-	<td width="200"><a href="http://localhost/parquesnacionales/visitantepamodvisita.php" TARGET="_self"><p class="barra" > modifique su visita </p> </a></td>
-</table>
+   
+   <header>
+       <h1>Bienvenido</h1>
+       
+   </header>
+   <div class="topnav">
+   <ul>
+     <a href="inicio%20paginas.html"> Cerrar sesion </a>
+     <a href="http://localhost/parquesnacionales/visitanteresgistroagenda.php">Registre su visita</a>
+     <a href="http://localhost/parquesnacionales/visitanteactualizaagenda.php">Modifique su visita</a>
+    <a href="http://localhost/parquesnacionales/visitaeliminaagenda.php">Elimine su visita</a>
+     
+     </ul>
 </div>
+<div>
+        <center><img src="estilo/pngwing.com.png" class="baner" height="300px" width="auto"></center>
+     
+    </div>
+    
 </body>
 </html>
