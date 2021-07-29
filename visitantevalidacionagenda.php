@@ -13,16 +13,9 @@ $salida=mysqli_query($conexion,$sql);
 /*validar accion de insercion*/
   if(mysqli_affected_rows($conexion)>0){
 	  echo "Datos Insertados";
-	  	header("location:visitantepagina.php");
+	 header("location:visitantepagina.php"); 
   }else{
 	  echo "No se logro insertar datos";
-	  	?>
-	<?php
-	include('visitanteregistroagenda.php');
-	?>
-	<H2 class="bad"> error en le ingreso de los datos </H2>
-    <?php
-	}
   }
 }
 ?>
