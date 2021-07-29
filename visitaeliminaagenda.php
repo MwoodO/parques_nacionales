@@ -1,8 +1,15 @@
 <html>
 <head>
 <title> elimina una visita agendada </title>
+<link rel="stylesheet" href="estilo/estilotablas.css">
 </head>
 <body>
+   <div class="topnav">
+   <ul>
+     <a href="inicio%20paginas.html"> Cerrar sesion </a>
+	 <a href="http://localhost/parquesnacionales/visitantepagina.php">ATRAS</a>
+     </ul>
+</div>
 <?php
 $conexion=mysqli_connect("localhost","root","","parquesnacionales");
 $sql="SELECT * FROM agendavisita";
@@ -28,8 +35,8 @@ while($fila=mysqli_fetch_assoc($salida)){
 	$x++;
 }
 echo'
-</table> <a href="http://localhost/parquesnacionales/visitantepamodvisita.php" TARGET="_self"> <p class="barra" > pagina anterior </p> </a>
-<a href="http://localhost/parquesnacionales/visitantepagina.php" TARGET="_self"> <p class="barra" > pagina de inicio para visitante </p> </a><body>
+</table> 
+<body>
 </html>';
 if(isset($_POST['eliminar'])){
 	$a=$_POST['codigoE'];	
