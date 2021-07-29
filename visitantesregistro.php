@@ -1,45 +1,49 @@
 <!DOCTYPEhtml>
 <html>
 <head>
+    <meta charset="utf-8">
 	<title> registrate	</title>
+	<link rel="stylesheet" href="estilo/estiloregistro.css">
 </head>
 <body>
-<form name="f1" action="registrovisitante.php" method="POST">
-<table class="tabla1" width="55%" align="center" cellpadding="0" cellspacing="0">
-			<tr><td colspan="2">  Visitantes</td></tr>
-						            <tr>
+    <form name="f1" action="registrovisitante.php" method="POST">
+        <table>
+			<tr><td colspan="2">REGISTRO VISITANTE</td></tr>
+            <tr><th colspan="2">  DATOS DE USUARIO  </th></tr>
+            <tr>
 				<td> Correo</td>
-				<td><label> <input type="text" required  placeholder="ingrese un correo" name="correo" size="30"/> </label> </td>
+				<td><input type="text" required placeholder="ingrese un correo" name="correo"></td>
             </tr>
 			<tr>
 				<td> Contraseña </td>
-				<td> <label> <input type="text" required  placeholder="********" name="contrasena" size="30" > </label> </td>
+				<td><input type="password" required placeholder="********" name="contrasena" size="20" ></td>
+			</tr>
+			<tr><th colspan="2">  DATOS PERSONALES  </th></tr>
+			<tr>
+				<td> Nombre</td>
+				<td><input type="text" required  placeholder="ingrese su nombre" name="nombre" size="20" ></td>
 			</tr>
 			<tr>
 				<td> Rut </td>
-				<td> <label> <input type="text" required  placeholder="ej:19292880-k, sin puntos y con guion" name="rut" size="30" > </label> </td>
+				<td><input type="text" required placeholder="ej:19292880-k, sin puntos y con guion" name="rut" size="20" ></td>
 			</tr>
-			<tr>
-				<td> Nombre				</td>
-				<td> <label> <input type="text" required  placeholder="ingrese su nombre" name="nombre" size="30" > </label> </td>
-			</tr>
+			
 			<tr>
 			   <td> Apellido paterno </td>
-			   <td> <label> <input type="text" required  placeholder="ingrese su apellido paterno" name="apaterno" size="30"> </label> </td>
+			   <td><input type="text" required  placeholder="ingrese su apellido paterno" name="apaterno" size="30"></td>
 			</tr>
             <tr>
 				<td>Apellido materno </td>
-				<td> <label><input type="text" required  placeholder="ingres su apellido materno" name="amaterno" size="30"/> </label> </td>
+				<td><input type="text" required  placeholder="ingres su apellido materno" name="amaterno" size="30"/></td>
 			</tr>
             <tr>
 				<td>Telefono</td>
-				<td><label> <input type="text" required  placeholder="ej.+56978423042" name="telefono" size="30"/> </label> </td>
+				<td> <input type="text" required  placeholder="ej.+56978423042" name="telefono" size="30"/></td>
             </tr>
-			<tr>
-			<td class="boton">
-			<label>
+            <tr>
+			<td colspan="2" class="boton">
 			 <input type="submit" name="registro" value="registrar">
-			 </label></td>
+			 </td>
 			 </tr>
 </table>
 </form>
