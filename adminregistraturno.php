@@ -1,15 +1,25 @@
+<!DOCTYPEhtml>
 <html>
 <head>
+<meta charset="utf-8">
 	<title> Turnos	</title>
+	<link rel="stylesheet" href="estilo/estiloregistro.css">
 </head>
 <body>
+   <div class="topnav">
+   <ul>
+     <a href="inicio%20paginas.html">Cerrar sesion</a>
+	 	 <a href="http://localhost/parquesnacionales/adminpagina.php"> pagina de inicio </a>
+	 <a href="http://localhost/parquesnacionales/admingestionturnos.php">pagina anterior</a>
+     </ul>
+	 </div>
 <form name="f1" action="adminvalidaturno.php" method="POST">
 <table class="tabla1" width="55%" align="center" cellpadding="0" cellspacing="0">
-			<tr><td colspan="2">  Distribucion de los turnos </td></tr>
+			<tr><th colspan="2">  Distribucion de los turnos </th></tr>
 			<tr>
 
-				<td>usuario del guardaparque </td>
-				<td> <label>				
+				<td>Usuario del guardaparque </td>
+				<td>			
 			         <?php
                       $conexion=mysqli_connect("localhost","root","","parquesnacionales");
                       $sql="SELECT usuario from guardaparques";
@@ -21,11 +31,11 @@
                    $seleccion1=$seleccion.'</select>';
                     ?>
 					<?php echo $seleccion1; ?>
-	          </label> </td>
+	          </td>
 			</tr>
 			<tr>
 				<td> Codigo del parque </td>
-				<td> <label>	
+				<td>	
     			<?php
                       $conexion=mysqli_connect("localhost","root","","parquesnacionales");
                       $sql="SELECT idparque from parquess";
@@ -37,25 +47,24 @@
                    $seleccion=$seleccion.'</select>';
                     ?>
 					<?php echo $seleccion; ?>
-				 </label> </td>
+				  </td>
 			</tr>
 			<tr>
 			   <td> Fecha </td>
-			   <td> <label> <input type="date" name="fecha" size="15"> </label> </td>
+			   <td> <input type="date" name="fecha" size="15"></td>
 			</tr>
             <tr>
 				<td>Hora de inicio </td>
-				<td> <label><input type="time" name="horainicio" size="15"/> </label> </td>
+				<td> <input type="time" name="horainicio" size="15"/></td>
 			</tr>
             <tr>
 				<td>Hora de termino</td>
-				<td><label> <input type="time" name="horafinal" size="15"/> </label> </td>
+				<td> <input type="time" name="horafinal" size="15"/></td>
             </tr>
 			<tr>
-			<td class="boton">
-			<label>
+			<td colspan="2" class="boton">
 			 <input type="submit" name="registro" value="registrar">
-			 </label></td>
+			 </td>
 			 </tr>
 </table>
 </form>
