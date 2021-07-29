@@ -10,10 +10,18 @@ $seleccion=$seleccion.'</select>';
 ?>
 <html>
 <head>
-<title> Administrador</title>
+    <title> Administrador</title>
+    <link rel="stylesheet" href="estilo/estiloregistro.css">
 </head>
-<Body>
-<form name="f1" action="admin.actualiza.turno.php" method="post">
+<body>
+   <div class="topnav">
+   <ul>
+     <a href="inicio%20paginas.html">Cerrar sesion</a>
+	 	 <a href="http://localhost/parquesnacionales/adminpagina.php"> Pagina de inicio </a>
+	 <a href="http://localhost/parquesnacionales/admingestionturnos.php"> Pagina anterior </a>
+     </ul>
+	 </div>
+<form class="from" name="f1" action="admin.actualiza.turno.php" method="post">
 <?php echo $seleccion; ?>
 <input type="submit" name="buscar" value="Buscar">
 </form>
