@@ -23,10 +23,6 @@
 				<td><input type="text" required   name="acompanantes" size="20" ></td>
 			</tr>
 			<tr>
-				<td> Fecha </td>
-				<td> <input type="date"  required name="fecha" size="20" ></td>
-			</tr>
-			<tr>
 				<td> Hora entrada</td>
 				<td> <input type="time" required name="horaentrada" size="20" ></td>
 			</tr>
